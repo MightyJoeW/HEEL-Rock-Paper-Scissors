@@ -1,0 +1,113 @@
+
+body {
+  position: center;
+  margin: auto;
+  margin-top:30px;
+  padding: 20px;
+  padding-bottom: 90px;
+  max-width: 300px;
+  height: 390px;
+  border: 2px solid black;
+  border-radius:20px;
+  background-image: url("http://www.pngmart.com/files/3/The-Rock-PNG-Transparent-Image.png");
+  background-size: 100px;
+  background-repeat: no-repeat; 
+  background-position: 50% 40%;
+}
+
+form {
+  background: radial-gradient(white, #ff0505, #ffa8a8);
+  margin: 60px auto; 
+  max-width:300px;
+  border: 1px solid #c6c7cc;
+  border-radius: 5px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  text-align:center;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border-radius: 5px;
+  font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  text-align:center;
+}
+
+input:focus { 
+    outline: none !important;
+    border-color: #7a7a7a;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.inputText {
+  width: 190px;
+}
+
+.buttonAction {
+  background: #f0f0f2;
+  border-top: 1px solid #c6c7cc;
+  padding: 20px;
+}
+
+.buttonAction .btn {
+  background: linear-gradient(#ff0000, #000);
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  text-align:center;
+  padding: 8px 16px;
+}
+
+.btn:hover {
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}
+
+.buttonAction label {
+  color: #7c7c80;
+  font-size: 12px;
+  float: left;
+  margin: 10px 0 0 20px;
+}
+
+.title {
+  text-shadow: 1px 1px 2px #7a0606;
+  text-align:center;
+  color:#454647;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+span {
+  color: #ff1d00;
+}
+
+#mainPhoto {
+  width: auto;
+  height: 170px;
+}
+
+.subTitle {
+  display: hidden;
+  text-align:center;
+  color:#599eff;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
