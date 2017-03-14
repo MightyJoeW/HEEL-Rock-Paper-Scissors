@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Rock Paper Scissors</title>
+	<title>HEEL Rock Paper Scissors</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lobster|Noto+Serif:400,700" rel="stylesheet">
 </head>
 <body>
-	<h1 class="title"><span>HEEL</span> Rock, Paper, Scissors</h1>
-	<br>
-	<br>
-	<!-- <h4 class="subTitle"> Enter rock, paper, or scissors</h4> -->
-	<form>
-        <fieldset class="HRPS">
-            <label> 
-                <!-- <b>Type Choice:</b> -->
-                <input class="inputText" type="text" id="playerOne" name="playerOne" placeholder="Type rock, paper, or scissors" autofocus>
-        </fieldset>
-        <fieldset class="buttonAction">
-           <input class="btn" onclick="outputResults()" type="submit" name="results" value="Shoot">
-       </fieldset>
-   </form>
-   <!-- <img id="mainPhoto" src="http://advisoranalyst.advisoranalystgr.netdna-cdn.com/wp-content/uploads/2014/05/thumb_6917_rockpaperscissors.jpg"> -->
-   <div class=footer> Copyright © 2017 All Rights Reserved.</div>
+  <header class="header">
+    <div class="container">
+      <h1><span class="rock">HEEL Rock</span>, <span class="paper">paper</span>, <span class="scissors">scissors<span class="jabroni"> JABRONI!</span></h1>
+    </div>
+  </header>
+  <div class="main">
+    <div class="container">
+      <section class="content">
+       <button class="play rock" type="button" onclick="play('rock')"></button>
+       <button class="play paper" type="button" onclick="play('paper')"></button>
+       <button class="play scissors" type="button" onclick="play('scissors')"></button>
+       <div style="clear:both;"></div>
+       <p><span id="player"></span> <span id="opponent"></span></p>
+       <h2 id="results"></h2>
+     </section>
+     <aside class="aside">
+      <div class="scorebox">
+        <h2>Score</h2>
+        <div class="score-num"><span id="wins">0</span> <br />wins</div>
+        <div class="score-divider"><span>-</span></div>
+        <div class="score-num"><span id="loses">0</span> <br />loses</div>
+      </div>
+      <button type="reset" id="reset" onclick="reset()">reset scores</button>
+    </aside>
+  </div>
+</div>
+<div class=footer> Copyright © 2017 All Rights Reserved.</div>
 <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript"> src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"</script>
 </body>
 </html>
