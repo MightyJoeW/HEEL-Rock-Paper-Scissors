@@ -1,32 +1,29 @@
-var loses = 0;
-var wins = 0;
+const loses = 0;
+const wins = 0;
 
-var play = function(userChoice) {
+const play = (userChoice) => {
 
     document.getElementById("player").innerHTML="";
     document.getElementById("opponent").innerHTML="";
     document.getElementById("results").innerHTML="";
 
 
-    if (userChoice === "rock" || userChoice === "paper" || userChoice === "scissors") {
-        document.getElementById("player").innerHTML='You chose ' + userChoice + '.';
-    } else {
-        document.getElementById("player").innerHTML="That is not a valid choice. Try again, jabroni!";
-
+    (userChoice === "rock" || userChoice === "paper" || userChoice === "scissors") ?
+        document.getElementById("player").innerHTML='You chose ' + userChoice + '.' :
+        document.getElementById("player").innerHTML="That is not a valid choice. Try again, jabroni!" :
         return false;
-    }
+    
 
-var computerChoice = Math.random(); //Math.random() randomly picks a number 0-1
+const computerChoice = Math.random();
 
-if (computerChoice < 0.34) {
-   computerChoice = "rock";
-} else if(computerChoice <= 0.67) {
-   computerChoice = "paper";
-} else {
+(computerChoice < 0.34) ?
+   computerChoice = "rock":
+(computerChoice <= 0.67) ?
+   computerChoice = "paper" :
    computerChoice = "scissors";
-}
 
-document.getElementById("opponent").innerHTML='// Your opponent chose ' + computerChoice + '.';
+
+document.getElementById("opponent").innerHTML='// `Your opponent chose ${computerChoice}.`
 
 var compare = function(choice1, choice2) {
     if (choice1 === choice2) {
